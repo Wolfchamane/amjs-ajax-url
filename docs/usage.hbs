@@ -1,0 +1,48 @@
+## Usage
+
+```javascript
+const AmjsAjaxURL = require('@amjs/ajax-url');
+const url = new AmjsAjaxURL({
+    domain : 'some-domain',
+    port   : 3000,
+    path   : 'some-path/{id}',
+    params : {
+        id : 1,
+        key: 'value'
+    }
+});
+console.log(url.value); // 'https://some-domain:3000/some-path/1?key=value'
+```
+
+In order to use not secure protocol (http), set the 'unsecure' property to true
+```javascript
+const AmjsAjaxURL = require('@amjs/ajax-url');
+const url = new AmjsAjaxURL({
+    domain   : 'some-domain',
+    port     : 3000,
+    path     : 'some-path/{id}',
+    params   : {
+        id   : 1,
+        key  : 'value'
+    },
+    unsecure : true
+});
+console.log(url.value); // 'http://some-domain:3000/some-path/1?key=value'
+```
+
+Also you can add values assigning direct value:
+```javascript
+const AmjsAjaxURL = require('@amjs/ajax-url');
+const url = new AmjsAjaxURL();
+url.value = {
+    domain   : 'some-domain',
+    port     : 3000,
+    path     : 'some-path/{id}',
+    params   : {
+        id   : 1,
+        key  : 'value'
+    },
+    unsecure : true
+});
+console.log(url.value); // 'http://some-domain:3000/some-path/1?key=value'
+```
