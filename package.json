@@ -10,6 +10,10 @@
         "ajax",
         "url"
     ],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:Wolfchamane/amjs-ajax-url.git"
+    },
     "license": "MIT",
     "main": "src/url.js",
     "dependencies": {
