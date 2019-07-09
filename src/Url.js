@@ -179,7 +179,7 @@ class AmjsAjaxURL extends AmjsDataTypesObject
     _fixDomain()
     {
         const portExpReg = /:\d{4}/;
-        const protocolExpReg = /^http?s:\/\//;
+        const protocolExpReg = /^https?\:\/\//;
 
         let { domain, port, protocol, unsecure } = this._extractValues();
 

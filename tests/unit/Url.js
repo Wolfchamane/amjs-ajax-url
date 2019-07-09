@@ -11,6 +11,16 @@ const assert                = require('assert');
     assert.equal(fSut instanceof AmjsAjaxURL, true, 'AmjsAjaxURL is registered as "URL"');
 })();
 
+(function()
+{
+    const sut = new AmjsAjaxURL({
+        domain : 'http://localhost'
+    });
+
+    assert.equal(sut.domain.value === 'localhost', true, 'Domain is rightly parsed');
+    assert.equal(sut.protocol.value === 'http', true, 'Protocol is rightly parsed');
+}());
+
 (function ()
 {
     let sut = new AmjsAjaxURL({
