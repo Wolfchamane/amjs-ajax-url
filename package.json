@@ -1,6 +1,6 @@
 {
     "name": "@amjs/ajax-url",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "author": "Arturo Martínez <arturo.mart.diaz@gmail.com>",
     "description": "Object URL for any AJAX request",
     "keywords": [
@@ -17,18 +17,18 @@
     "license": "MIT",
     "main": "src/Url.js",
     "dependencies": {
-        "@amjs/data-types": "^0.1.0"
+        "@amjs/data-types": "^0.1.3"
     },
     "devDependencies": {
         "@amjs/create-readme": "^0.1.0",
-        "@amjs/templater": "^0.1.1",
-        "@babel/core": "^7.4.5",
-        "@babel/preset-env": "^7.4.5",
-        "@babel/register": "^7.4.4",
+        "@amjs/templater": "^0.1.3",
+        "@babel/core": "^7.6.0",
+        "@babel/preset-env": "^7.6.0",
+        "@babel/register": "^7.6.0",
         "@istanbuljs/nyc-config-babel": "^2.1.1",
-        "babel-eslint": "^10.0.2",
-        "babel-plugin-istanbul": "^5.1.4",
-        "eslint": "^6.0.1",
+        "babel-eslint": "^10.0.3",
+        "babel-plugin-istanbul": "^5.2.0",
+        "eslint": "^6.3.0",
         "jsdom": "^15.1.1",
         "nyc": "^14.1.1",
         "prettier": "^1.18.2"
