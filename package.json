@@ -1,6 +1,6 @@
 {
     "name": "@amjs/ajax-url",
-    "version": "0.1.3",
+    "version": "0.1.4",
     "author": "Arturo Martínez <arturo.mart.diaz@gmail.com>",
     "description": "Object URL for any AJAX request",
     "keywords": [
